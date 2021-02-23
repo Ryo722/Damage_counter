@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		330F776025E4CC4E00B6FF65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330F775F25E4CC4E00B6FF65 /* AppDelegate.swift */; };
+		330F776225E4CC4E00B6FF65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330F776125E4CC4E00B6FF65 /* SceneDelegate.swift */; };
+		330F776425E4CC4E00B6FF65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330F776325E4CC4E00B6FF65 /* ContentView.swift */; };
+		330F776625E4CC4F00B6FF65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 330F776525E4CC4F00B6FF65 /* Assets.xcassets */; };
+		330F776925E4CC4F00B6FF65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 330F776825E4CC4F00B6FF65 /* Preview Assets.xcassets */; };
+		330F776C25E4CC4F00B6FF65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330F776A25E4CC4F00B6FF65 /* LaunchScreen.storyboard */; };
+		330F777725E4CC5000B6FF65 /* DamegeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330F777625E4CC5000B6FF65 /* DamegeTests.swift */; };
+		330F778225E4CC5000B6FF65 /* DamegeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330F778125E4CC5000B6FF65 /* DamegeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		330F777325E4CC5000B6FF65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 330F775425E4CC4E00B6FF65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 330F775B25E4CC4E00B6FF65;
+			remoteInfo = Damege;
+		};
+		330F777E25E4CC5000B6FF65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 330F775425E4CC4E00B6FF65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 330F775B25E4CC4E00B6FF65;
+			remoteInfo = Damege;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		330F775C25E4CC4E00B6FF65 /* Damege.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Damege.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		330F775F25E4CC4E00B6FF65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		330F776125E4CC4E00B6FF65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		330F776325E4CC4E00B6FF65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		330F776525E4CC4F00B6FF65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		330F776825E4CC4F00B6FF65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		330F776B25E4CC4F00B6FF65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		330F776D25E4CC4F00B6FF65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		330F777225E4CC5000B6FF65 /* DamegeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DamegeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		330F777625E4CC5000B6FF65 /* DamegeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamegeTests.swift; sourceTree = "<group>"; };
+		330F777825E4CC5000B6FF65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		330F777D25E4CC5000B6FF65 /* DamegeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DamegeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		330F778125E4CC5000B6FF65 /* DamegeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamegeUITests.swift; sourceTree = "<group>"; };
+		330F778325E4CC5000B6FF65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		330F775925E4CC4E00B6FF65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330F776F25E4CC5000B6FF65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330F777A25E4CC5000B6FF65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		330F775325E4CC4E00B6FF65 = {
+			isa = PBXGroup;
+			children = (
+				330F775E25E4CC4E00B6FF65 /* Damege */,
+				330F777525E4CC5000B6FF65 /* DamegeTests */,
+				330F778025E4CC5000B6FF65 /* DamegeUITests */,
+				330F775D25E4CC4E00B6FF65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		330F775D25E4CC4E00B6FF65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				330F775C25E4CC4E00B6FF65 /* Damege.app */,
+				330F777225E4CC5000B6FF65 /* DamegeTests.xctest */,
+				330F777D25E4CC5000B6FF65 /* DamegeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		330F775E25E4CC4E00B6FF65 /* Damege */ = {
+			isa = PBXGroup;
+			children = (
+				330F775F25E4CC4E00B6FF65 /* AppDelegate.swift */,
+				330F776125E4CC4E00B6FF65 /* SceneDelegate.swift */,
+				330F776325E4CC4E00B6FF65 /* ContentView.swift */,
+				330F776525E4CC4F00B6FF65 /* Assets.xcassets */,
+				330F776A25E4CC4F00B6FF65 /* LaunchScreen.storyboard */,
+				330F776D25E4CC4F00B6FF65 /* Info.plist */,
+				330F776725E4CC4F00B6FF65 /* Preview Content */,
+			);
+			path = Damege;
+			sourceTree = "<group>";
+		};
+		330F776725E4CC4F00B6FF65 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				330F776825E4CC4F00B6FF65 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		330F777525E4CC5000B6FF65 /* DamegeTests */ = {
+			isa = PBXGroup;
+			children = (
+				330F777625E4CC5000B6FF65 /* DamegeTests.swift */,
+				330F777825E4CC5000B6FF65 /* Info.plist */,
+			);
+			path = DamegeTests;
+			sourceTree = "<group>";
+		};
+		330F778025E4CC5000B6FF65 /* DamegeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				330F778125E4CC5000B6FF65 /* DamegeUITests.swift */,
+				330F778325E4CC5000B6FF65 /* Info.plist */,
+			);
+			path = DamegeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		330F775B25E4CC4E00B6FF65 /* Damege */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 330F778625E4CC5000B6FF65 /* Build configuration list for PBXNativeTarget "Damege" */;
+			buildPhases = (
+				330F775825E4CC4E00B6FF65 /* Sources */,
+				330F775925E4CC4E00B6FF65 /* Frameworks */,
+				330F775A25E4CC4E00B6FF65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Damege;
+			productName = Damege;
+			productReference = 330F775C25E4CC4E00B6FF65 /* Damege.app */;
+			productType = "com.apple.product-type.application";
+		};
+		330F777125E4CC5000B6FF65 /* DamegeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 330F778925E4CC5000B6FF65 /* Build configuration list for PBXNativeTarget "DamegeTests" */;
+			buildPhases = (
+				330F776E25E4CC5000B6FF65 /* Sources */,
+				330F776F25E4CC5000B6FF65 /* Frameworks */,
+				330F777025E4CC5000B6FF65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				330F777425E4CC5000B6FF65 /* PBXTargetDependency */,
+			);
+			name = DamegeTests;
+			productName = DamegeTests;
+			productReference = 330F777225E4CC5000B6FF65 /* DamegeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		330F777C25E4CC5000B6FF65 /* DamegeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 330F778C25E4CC5000B6FF65 /* Build configuration list for PBXNativeTarget "DamegeUITests" */;
+			buildPhases = (
+				330F777925E4CC5000B6FF65 /* Sources */,
+				330F777A25E4CC5000B6FF65 /* Frameworks */,
+				330F777B25E4CC5000B6FF65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				330F777F25E4CC5000B6FF65 /* PBXTargetDependency */,
+			);
+			name = DamegeUITests;
+			productName = DamegeUITests;
+			productReference = 330F777D25E4CC5000B6FF65 /* DamegeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		330F775425E4CC4E00B6FF65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					330F775B25E4CC4E00B6FF65 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					330F777125E4CC5000B6FF65 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 330F775B25E4CC4E00B6FF65;
+					};
+					330F777C25E4CC5000B6FF65 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 330F775B25E4CC4E00B6FF65;
+					};
+				};
+			};
+			buildConfigurationList = 330F775725E4CC4E00B6FF65 /* Build configuration list for PBXProject "Damege" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 330F775325E4CC4E00B6FF65;
+			productRefGroup = 330F775D25E4CC4E00B6FF65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				330F775B25E4CC4E00B6FF65 /* Damege */,
+				330F777125E4CC5000B6FF65 /* DamegeTests */,
+				330F777C25E4CC5000B6FF65 /* DamegeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		330F775A25E4CC4E00B6FF65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330F776C25E4CC4F00B6FF65 /* LaunchScreen.storyboard in Resources */,
+				330F776925E4CC4F00B6FF65 /* Preview Assets.xcassets in Resources */,
+				330F776625E4CC4F00B6FF65 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330F777025E4CC5000B6FF65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330F777B25E4CC5000B6FF65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		330F775825E4CC4E00B6FF65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330F776025E4CC4E00B6FF65 /* AppDelegate.swift in Sources */,
+				330F776225E4CC4E00B6FF65 /* SceneDelegate.swift in Sources */,
+				330F776425E4CC4E00B6FF65 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330F776E25E4CC5000B6FF65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330F777725E4CC5000B6FF65 /* DamegeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330F777925E4CC5000B6FF65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330F778225E4CC5000B6FF65 /* DamegeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		330F777425E4CC5000B6FF65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 330F775B25E4CC4E00B6FF65 /* Damege */;
+			targetProxy = 330F777325E4CC5000B6FF65 /* PBXContainerItemProxy */;
+		};
+		330F777F25E4CC5000B6FF65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 330F775B25E4CC4E00B6FF65 /* Damege */;
+			targetProxy = 330F777E25E4CC5000B6FF65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		330F776A25E4CC4F00B6FF65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				330F776B25E4CC4F00B6FF65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		330F778425E4CC5000B6FF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		330F778525E4CC5000B6FF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		330F778725E4CC5000B6FF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Damege/Preview Content\"";
+				DEVELOPMENT_TEAM = FD6Z5CCVG3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Damege/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hana.Damege;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		330F778825E4CC5000B6FF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Damege/Preview Content\"";
+				DEVELOPMENT_TEAM = FD6Z5CCVG3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Damege/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hana.Damege;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		330F778A25E4CC5000B6FF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FD6Z5CCVG3;
+				INFOPLIST_FILE = DamegeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hana.DamegeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Damege.app/Damege";
+			};
+			name = Debug;
+		};
+		330F778B25E4CC5000B6FF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FD6Z5CCVG3;
+				INFOPLIST_FILE = DamegeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hana.DamegeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Damege.app/Damege";
+			};
+			name = Release;
+		};
+		330F778D25E4CC5000B6FF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FD6Z5CCVG3;
+				INFOPLIST_FILE = DamegeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hana.DamegeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Damege;
+			};
+			name = Debug;
+		};
+		330F778E25E4CC5000B6FF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FD6Z5CCVG3;
+				INFOPLIST_FILE = DamegeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hana.DamegeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Damege;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		330F775725E4CC4E00B6FF65 /* Build configuration list for PBXProject "Damege" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				330F778425E4CC5000B6FF65 /* Debug */,
+				330F778525E4CC5000B6FF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		330F778625E4CC5000B6FF65 /* Build configuration list for PBXNativeTarget "Damege" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				330F778725E4CC5000B6FF65 /* Debug */,
+				330F778825E4CC5000B6FF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		330F778925E4CC5000B6FF65 /* Build configuration list for PBXNativeTarget "DamegeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				330F778A25E4CC5000B6FF65 /* Debug */,
+				330F778B25E4CC5000B6FF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		330F778C25E4CC5000B6FF65 /* Build configuration list for PBXNativeTarget "DamegeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				330F778D25E4CC5000B6FF65 /* Debug */,
+				330F778E25E4CC5000B6FF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 330F775425E4CC4E00B6FF65 /* Project object */;
+}
