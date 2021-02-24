@@ -24,59 +24,16 @@ struct ContentView: View {
     
     
     var body: some View {
-        NavigationView{
-            Form {
-                Section(header: Text("相手のバトルポケモン")){
-                    Stepper(value: $opponentdamage[0], in: 0...990, step: 10){
-                        Text("\(opponentdamage[0], specifier: "%d")")
-                    }
+        HStack{
+            Button("コイントス") {
+                let randomBool = Bool.random()
+                self.showAlert = true
+                
+                if randomBool {
+                    coin = "表"
                 }
-                Section(header: Text("相手のベンチポケモン")){
-                    Stepper(value: $opponentdamage[1], in: 0...990, step: 10){
-                        Text("\(opponentdamage[1], specifier: "%d")")
-                    }
-                    Stepper(value: $opponentdamage[2], in: 0...990, step: 10){
-                        Text("\(opponentdamage[2], specifier: "%d")")
-                    }
-                    Stepper(value: $opponentdamage[3], in: 0...990, step: 10){
-                        Text("\(opponentdamage[3], specifier: "%d")")
-                    }
-                    Stepper(value: $opponentdamage[4], in: 0...990, step: 10){
-                        Text("\(opponentdamage[4], specifier: "%d")")
-                    }
-                    Stepper(value: $opponentdamage[5], in: 0...990, step: 10){
-                        Text("\(opponentdamage[5], specifier: "%d")")
-                    }
-                    Stepper(value: $opponentdamage[6], in: 0...990, step: 10){
-                        Text("\(opponentdamage[6], specifier: "%d")")
-                    }
-                    Stepper(value: $opponentdamage[7], in: 0...990, step: 10){
-                        Text("\(opponentdamage[7], specifier: "%d")")
-                    }
-                    Stepper(value: $opponentdamage[8], in: 0...990, step: 10){
-                        Text("\(opponentdamage[8], specifier: "%d")")
-                    }
-                }
-            }
-            .toolbar{
-                ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    Button("コイントス") {
-                        let randomBool = Bool.random()
-                        self.showAlert = true
-                        
-                        if randomBool {
-                            coin = "表"
-                        }
-                        else{
-                            coin = "裏"
-                        }
-                    }
-                    Button("状態異常"){
-                        self.showcondition.toggle()
-                    }
-                    .sheet(isPresented: $showcondition){
-                        ConditionlistView(condition: self.condition)
-                    }
+                else{
+                    coin = "裏"
                 }
             }
             .alert(isPresented: $showAlert) {
@@ -86,8 +43,47 @@ struct ContentView: View {
                     dismissButton: .default(Text("OK"))
                 )
             }
+            Button("状態異常"){
+                self.showcondition.toggle()
+            }
+            .sheet(isPresented: $showcondition){
+                ConditionlistView(condition: self.condition)
+            }
         }
-            
+    
+        Form {
+            Section(header: Text("相手のバトルポケモン")){
+                Stepper(value: $opponentdamage[0], in: 0...990, step: 10){
+                    Text("\(opponentdamage[0], specifier: "%d")")
+                }
+            }
+            Section(header: Text("相手のベンチポケモン")){
+                Stepper(value: $opponentdamage[1], in: 0...990, step: 10){
+                    Text("\(opponentdamage[1], specifier: "%d")")
+                }
+                Stepper(value: $opponentdamage[2], in: 0...990, step: 10){
+                    Text("\(opponentdamage[2], specifier: "%d")")
+                }
+                Stepper(value: $opponentdamage[3], in: 0...990, step: 10){
+                    Text("\(opponentdamage[3], specifier: "%d")")
+                }
+                Stepper(value: $opponentdamage[4], in: 0...990, step: 10){
+                    Text("\(opponentdamage[4], specifier: "%d")")
+                }
+                Stepper(value: $opponentdamage[5], in: 0...990, step: 10){
+                    Text("\(opponentdamage[5], specifier: "%d")")
+                }
+                Stepper(value: $opponentdamage[6], in: 0...990, step: 10){
+                    Text("\(opponentdamage[6], specifier: "%d")")
+                }
+                Stepper(value: $opponentdamage[7], in: 0...990, step: 10){
+                    Text("\(opponentdamage[7], specifier: "%d")")
+                }
+                Stepper(value: $opponentdamage[8], in: 0...990, step: 10){
+                    Text("\(opponentdamage[8], specifier: "%d")")
+                }
+            }
+        }
         Form {
             Section(header: Text("自分のバトルポケモン")){
                 Stepper(value: $owndamage[0], in: 0...990, step: 10){
