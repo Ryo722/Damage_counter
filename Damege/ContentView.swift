@@ -50,114 +50,60 @@ struct ContentView: View {
                 ConditionlistView(condition: self.condition)
             }
         }
-    
-        Form {
-            Section(header: Text("相手のバトルポケモン")){
-                Stepper(value: $opponentdamage[0], in: 0...990, step: 10){
-                    Text("\(opponentdamage[0], specifier: "%d")")
+        
+        List{
+            Section(header: Text("相手のポケモン")){
+                ForEach( opponentdamage, id: \.self) { index in
+                    Stepper(value: $opponentdamage[index], in: 0...990, step: 10){
+                        Text("\(self.opponentdamage[index], specifier: "%d")")
+                    }
                 }
+                /// 行入れ替え操作時に呼び出す処理の指定
+                .onMove(perform: rowReplace)
             }
-            Section(header: Text("相手のベンチポケモン")){
-                Stepper(value: $opponentdamage[1], in: 0...990, step: 10){
-                    Text("\(opponentdamage[1], specifier: "%d")")
+            .environment(\.editMode, .constant(.active))
+        }
+        .listStyle(InsetGroupedListStyle())
+        
+        List{
+            Section(header: Text("自分のポケモン")){
+                ForEach(0 ..< owndamage.count) { index in
+                    Stepper(value: $owndamage[index], in: 0...990, step: 10){
+                        Text("ポケモン\(index+1)　ダメージ:\(self.owndamage[index], specifier: "%d")")
+                    }
                 }
-                Stepper(value: $opponentdamage[2], in: 0...990, step: 10){
-                    Text("\(opponentdamage[2], specifier: "%d")")
-                }
-                Stepper(value: $opponentdamage[3], in: 0...990, step: 10){
-                    Text("\(opponentdamage[3], specifier: "%d")")
-                }
-                Stepper(value: $opponentdamage[4], in: 0...990, step: 10){
-                    Text("\(opponentdamage[4], specifier: "%d")")
-                }
-                Stepper(value: $opponentdamage[5], in: 0...990, step: 10){
-                    Text("\(opponentdamage[5], specifier: "%d")")
-                }
-                Stepper(value: $opponentdamage[6], in: 0...990, step: 10){
-                    Text("\(opponentdamage[6], specifier: "%d")")
-                }
-                Stepper(value: $opponentdamage[7], in: 0...990, step: 10){
-                    Text("\(opponentdamage[7], specifier: "%d")")
-                }
-                Stepper(value: $opponentdamage[8], in: 0...990, step: 10){
-                    Text("\(opponentdamage[8], specifier: "%d")")
-                }
+                /// 行入れ替え操作時に呼び出す処理の指定
+                .onMove(perform: rowReplace)
             }
         }
-        Form {
-            Section(header: Text("自分のバトルポケモン")){
-                Stepper(value: $owndamage[0], in: 0...990, step: 10){
-                    Text("\(owndamage[0], specifier: "%d")")
-                }
-            }
-            
-            Section(header: Text("自分のベンチポケモン")){
-                Stepper(value: $owndamage[1], in: 0...990, step: 10){
-                    Text("\(owndamage[1], specifier: "%d")")
-                }
-                Stepper(value: $owndamage[2], in: 0...990, step: 10){
-                    Text("\(owndamage[2], specifier: "%d")")
-                }
-                Stepper(value: $owndamage[3], in: 0...990, step: 10){
-                    Text("\(owndamage[3], specifier: "%d")")
-                }
-                Stepper(value: $owndamage[4], in: 0...990, step: 10){
-                    Text("\(owndamage[4], specifier: "%d")")
-                }
-                Stepper(value: $owndamage[5], in: 0...990, step: 10){
-                    Text("\(owndamage[5], specifier: "%d")")
-                }
-                Stepper(value: $owndamage[6], in: 0...990, step: 10){
-                    Text("\(owndamage[6], specifier: "%d")")
-                }
-                Stepper(value: $owndamage[7], in: 0...990, step: 10){
-                    Text("\(owndamage[7], specifier: "%d")")
-                }
-                Stepper(value: $owndamage[8], in: 0...990, step: 10){
-                    Text("\(owndamage[8], specifier: "%d")")
-                }
-            }
-        }
+        .listStyle(InsetGroupedListStyle())
+    }
+    /// 行入れ替え処理
+    func rowReplace(_ from: IndexSet, _ to: Int) {
+        opponentdamage.move(fromOffsets: from, toOffset: to)
+        owndamage.move(fromOffsets: from, toOffset: to)
+        
     }
 }
 
 struct ConditionlistView: View {
     @ObservedObject var condition: ViewModel
+    var conditionword = ["どく","やけど","ねむり","まひ","こんらん"]
     
     var body: some View{
         Form{
             Section(header: Text("相手のバトルポケモン")){
-                Toggle(isOn: $condition.opponentcondition[0]){
-                    Text("どく")
-                }
-                Toggle(isOn: $condition.opponentcondition[1]){
-                    Text("やけど")
-                }
-                Toggle(isOn: $condition.opponentcondition[2]){
-                    Text("ねむり")
-                }
-                Toggle(isOn: $condition.opponentcondition[3]){
-                    Text("まひ")
-                }
-                Toggle(isOn: $condition.opponentcondition[4]){
-                    Text("こんらん")
+                ForEach(0 ..< condition.opponentcondition.count) { index in
+                    Toggle(isOn: $condition.opponentcondition[index]){
+                        Text("\(self.conditionword[index])")
+                    }
                 }
             }
             Section(header: Text("自分のバトルポケモン")){
-                Toggle(isOn: $condition.owncondition[0]){
-                    Text("どく")
-                }
-                Toggle(isOn: $condition.owncondition[1]){
-                    Text("やけど")
-                }
-                Toggle(isOn: $condition.owncondition[2]){
-                    Text("ねむり")
-                }
-                Toggle(isOn: $condition.owncondition[3]){
-                    Text("まひ")
-                }
-                Toggle(isOn: $condition.owncondition[4]){
-                    Text("こんらん")
+                ForEach(0 ..< condition.owncondition.count) { index in
+                    Toggle(isOn: $condition.owncondition[index]){
+                        Text("\(self.conditionword[index])")
+                    }
                 }
             }
         }
